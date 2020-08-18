@@ -10,6 +10,10 @@
   <description>Telegram Travel Bot </description>
   <name>TravelBot</name>
 
+  <properties>
+    <java.version>11</java.version>
+  </properties>
+
   <dependencies>
   <dependency>
     <groupId>org.telegram</groupId>

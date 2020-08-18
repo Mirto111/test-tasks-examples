@@ -1,5 +1,7 @@
 package ru.examples;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.telegram.telegrambots.ApiContextInitializer;
@@ -13,9 +15,15 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException;
 public class TravelBot extends TelegramLongPollingBot {
 
   private static final String BOT_NAME = "ExampleOfTravelBot";
-  private static final String BOT_TOKEN = "your token";
+  private static final String BOT_TOKEN = System.getProperty("token");
+  private static final Map<String, String> cities = new HashMap<>();
+  private static final Logger log = Logger.getLogger(TravelBot.class.getName());
 
-  Logger log = Logger.getLogger("TravelBot");
+  static {
+    cities.put("Москва", "Не забудьте посетить Красную Площадь. Ну а в ЦУМ можно и не заходить)))");
+    cities.put("Санкт-Петербург", "Посетите Эрмитаж");
+    cities.put("Нью-йорк", "Посетите Статую Свободы, Empire State Building");
+  }
 
   public static void main(String[] args) {
     ApiContextInitializer.init();
@@ -31,14 +39,16 @@ public class TravelBot extends TelegramLongPollingBot {
 
   public void onUpdateReceived(Update update) {
     String message = update.getMessage().getText();
-    sendMsg(update.getMessage().getChatId().toString(), message);
+    String text = cities.get(message);
+    sendMsg(update.getMessage().getChatId().toString(), text);
   }
 
-  public synchronized void sendMsg(String chatId, String s) {
+  private synchronized void sendMsg(String chatId, String s) {
     SendMessage sendMessage = new SendMessage();
     sendMessage.enableMarkdown(true);
     sendMessage.setChatId(chatId);
-    sendMessage.setText(s);
+    String text = s != null ? s : "Нет города в базе";
+    sendMessage.setText(text);
     try {
       execute(sendMessage);
     } catch (TelegramApiException e) {
