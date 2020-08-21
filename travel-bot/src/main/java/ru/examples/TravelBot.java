@@ -25,7 +25,7 @@ public class TravelBot extends TelegramLongPollingBot {
     cities.put("Нью-йорк", "Посетите Статую Свободы, Empire State Building");
   }
 
-  public static void main(String[] args) {
+  public static void mains(String[] args) {
     ApiContextInitializer.init();
     TelegramBotsApi telegramBotApi = new TelegramBotsApi();
     TravelBot travelBot = new TravelBot();
