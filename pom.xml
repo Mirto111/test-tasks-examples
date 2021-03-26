@@ -11,7 +11,7 @@
 
   <modules>
     <module>travel-bot</module>
-    <module>user-profile</module>
+    <module>epam-training-center-test-task</module>
     <module>common-web</module>
   </modules>
 

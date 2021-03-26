@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+    <dish>
+        <name>Рулет с изюмом</name>
+        <weight>75</weight>
+        <price>15</price>
+    </dish>
+    <dish>
+        <name>Пирог с повидлом</name>
+        <weight>60</weight>
+        <price>13</price>
+    </dish>
+    <dish>
+        <name>Пирог с яблоками</name>
+        <weight>60</weight>
+        <price>13</price>
+    </dish>
+    <dish>
+        <name>Салат Изюминка</name>
+        <weight>100</weight>
+        <price>35</price>
+    </dish>
+    <dish>
+        <name>Салат Лукошко</name>
+        <weight>100</weight>
+        <price>40</price>
+    </dish>
+    <dish>
+        <name>Салат Капустный с помидором</name>
+        <weight>100</weight>
+        <price>19</price>
+    </dish>
+    <dish>
+        <name>Суп харчо с говядиной</name>
+        <weight>250</weight>
+        <price>31</price>
+    </dish>
+    <dish>
+        <name>Суп куриный с грибами</name>
+        <weight>250</weight>
+        <price>34</price>
+    </dish>
+    <dish>
+        <name>Суп болгарский вегетарианский</name>
+        <weight>250</weight>
+        <price>21</price>
+    </dish>
+    <dish>
+        <name>Рыбное филе с помидоркой</name>
+        <weight>80</weight>
+        <price>54</price>
+    </dish>
+    <dish>
+        <name>Печень по королевски</name>
+        <weight>150</weight>
+        <price>54</price>
+    </dish>
+    <dish>
+        <name>Свинина запеченная"По-гусарски"</name>
+        <weight>80</weight>
+        <price>68</price>
+    </dish>
+    <dish>
+        <name>Греча с маслом</name>
+        <weight>170</weight>
+        <price>17</price>
+    </dish>
+    <dish>
+        <name>Макароны отварные</name>
+        <weight>170</weight>
+        <price>15</price>
+    </dish>
+    <dish>
+        <name>Рис отварной с маслом</name>
+        <weight>170</weight>
+        <price>16</price>
+    </dish>
+</menu>
