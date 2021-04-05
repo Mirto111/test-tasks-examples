@@ -10,9 +10,6 @@ import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.events.EndElement;
 import javax.xml.stream.events.XMLEvent;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,11 +18,10 @@ public class StaxXMLReader {
     public static List<Dish> parseXmlMenu(String fileName) {
         List<Dish> empList = new ArrayList<>();
         Dish dish = null;
-        ClassLoader classLoader = StaxXMLReader.class.getClassLoader();
-        File file = new File(classLoader.getResource(fileName).getFile());
+        ClassLoader cls = StaxXMLReader.class.getClassLoader();
         XMLInputFactory xmlInputFactory = XMLInputFactory.newInstance();
         try {
-            XMLEventReader xmlEventReader = xmlInputFactory.createXMLEventReader(new FileInputStream(file));
+            XMLEventReader xmlEventReader = xmlInputFactory.createXMLEventReader(cls.getResourceAsStream(fileName));
 
             while (xmlEventReader.hasNext()) {
                 XMLEvent xmlEvent = xmlEventReader.nextEvent();
@@ -53,7 +49,7 @@ public class StaxXMLReader {
                 }
             }
 
-        } catch (FileNotFoundException | XMLStreamException e) {
+        } catch (XMLStreamException e) {
             e.printStackTrace();
         }
         return empList;
@@ -63,11 +59,10 @@ public class StaxXMLReader {
         List<Order> empList = new ArrayList<>();
         List<Dish> dishes = null;
         Order emp = null;
-        ClassLoader classLoader = StaxXMLReader.class.getClassLoader();
-        File file = new File(classLoader.getResource(fileName).getFile());
+        ClassLoader cls = StaxXMLReader.class.getClassLoader();
         XMLInputFactory xmlInputFactory = XMLInputFactory.newInstance();
         try {
-            XMLEventReader xmlEventReader = xmlInputFactory.createXMLEventReader(new FileInputStream(file));
+            XMLEventReader xmlEventReader = xmlInputFactory.createXMLEventReader(cls.getResourceAsStream(fileName));
 
             while (xmlEventReader.hasNext()) {
                 XMLEvent xmlEvent = xmlEventReader.nextEvent();
@@ -97,7 +92,7 @@ public class StaxXMLReader {
                 }
             }
 
-        } catch (FileNotFoundException | XMLStreamException e) {
+        } catch (XMLStreamException e) {
             e.printStackTrace();
         }
         return empList;
