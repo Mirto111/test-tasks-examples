@@ -13,6 +13,7 @@
     <module>travel-bot</module>
     <module>epam-training-center-test-task</module>
     <module>common-web</module>
+    <module>xml-sync-db</module>
   </modules>
 
   <properties>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<departments>
+    <department>
+        <depCodeJob>
+            <depcode>ИТТ</depcode>
+            <depjob>Девопс</depjob>
+        </depCodeJob>
+        <description>Занимается пвава</description>
+    </department>
+    <department>
+        <depCodeJob>
+            <depcode>ИТТ</depcode>
+            <depjob>Проджект-менеджер</depjob>
+        </depCodeJob>
+        <description>Занимается оооооо</description>
+    </department>
+    <department>
+        <depCodeJob>
+            <depcode>ЮАО</depcode>
+            <depjob>Юрист</depjob>
+        </depCodeJob>
+        <description>Занимается бла бла</description>
+    </department>
+    <department>
+        <depCodeJob>
+            <depcode>ИТТ</depcode>
+            <depjob>Программист</depjob>
+        </depCodeJob>
+        <description>Занимается джжжж</description>
+    </department>
+</departments>

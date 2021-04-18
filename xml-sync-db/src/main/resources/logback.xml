@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <property resource="app.properties" />
+    # Console appender
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            # Pattern of log message for console appender
+            <charset>UTF-8</charset>
+            <Pattern>%d{HH:mm:ss.SSS} %highlight(%-5level) %cyan(%class{50}.%M:%L) - %msg%n</Pattern>
+        </encoder>
+    </appender>
+
+    # File appender
+    <appender name="file" class="ch.qos.logback.core.FileAppender">
+        <file>${log.file}</file>
+        <append>false</append>
+        <encoder>
+            # Pattern of log message for file appender
+            <charset>UTF-8</charset>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5p %m%n</pattern>
+        </encoder>
+    </appender>
+
+    # Override log level for specified package
+    <logger name="task" level="TRACE"/> ## папка которую будем логировать изменить потом
+
+    <root level="INFO">
+        <appender-ref ref="file" />
+        <appender-ref ref="console" />
+    </root>
+</configuration>
