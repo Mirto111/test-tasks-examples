@@ -1,23 +1,22 @@
 package epam.lunch.model;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlElementWrapper;
 import java.util.List;
 
 public class Order {
 
-    private List<Dish> dishes;
     private Customer customer;
+    private List<Dish> dishes;
 
     public Order() {
     }
 
-    public Order(List<Dish> dishes, Customer customer) {
-        this.dishes = dishes;
-        this.customer = customer;
-    }
     public Customer getCustomer() {
         return customer;
     }
 
+    @XmlElement(name = "customer")
     public void setCustomer(Customer customer) {
         this.customer = customer;
     }
@@ -26,6 +25,8 @@ public class Order {
         return dishes;
     }
 
+    @XmlElementWrapper(name = "list")
+    @XmlElement(name = "dish")
     public void setDishes(List<Dish> dishes) {
         this.dishes = dishes;
     }

@@ -1,41 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <orders>
     <order>
-        <customer>Пупкин А.</customer>
+        <customer>
+            <name>Пупкин А.</name>
+        </customer>
         <list>
-            <name>Салат Изюминка</name>
-            <name>Печень по королевски</name>
-            <name>Рис отварной с маслом</name>
-            <name>Рулет с изюмом</name>
+            <dish>
+                <name>Салат Изюминка</name>
+            </dish>
+            <dish>
+                <name>Печень по королевски</name>
+            </dish>
+            <dish>
+                <name>Рис отварной с маслом</name>
+            </dish>
+            <dish>
+                <name>Рулет с изюмом</name>
+            </dish>
         </list>
     </order>
     <order>
-        <customer>Кривенко С.</customer>
+        <customer>
+            <name>Кривенко С.</name>
+        </customer>
         <list>
-            <name>Салат Лукошко</name>
-            <name>Суп куриный с грибами</name>
-            <name>Свинина запеченная"По-гусарски"</name>
-            <name>Макароны отварные</name>
-            <name>Пирог с яблоками</name>
+            <dish>
+                <name>Салат Лукошко</name>
+            </dish>
+            <dish>
+                <name>Суп куриный с грибами</name>
+            </dish>
+            <dish>
+                <name>Свинина запеченная"По-гусарски"</name>
+            </dish>
+            <dish>
+                <name>Макароны отварные</name>
+            </dish>
+            <dish>
+                <name>Пирог с яблоками</name>
+            </dish>
         </list>
     </order>
     <order>
-        <customer>Гайченов П.</customer>
+        <customer>
+            <name>Гайченов П.</name>
+        </customer>
         <list>
-            <name>Суп болгарский вегетарианский</name>
-            <name>Рыбное филе с помидоркой</name>
-            <name>Рулет с изюмом</name>
-            <name>Пирог с повидлом</name>
+            <dish>
+                <name>Суп болгарский вегетарианский</name>
+            </dish>
+            <dish>
+                <name>Рыбное филе с помидоркой</name>
+            </dish>
+            <dish>
+                <name>Рулет с изюмом</name>
+            </dish>
+            <dish>
+                <name>Пирог с повидлом</name>
+            </dish>
         </list>
     </order>
     <order>
-        <customer>Сухожилов Л.</customer>
+        <customer>
+            <name>Сухожилов Л.</name>
+        </customer>
         <list>
-            <name>Салат Изюминка</name>
-            <name>Суп куриный с грибами</name>
-            <name>Печень по королевски</name>
-            <name>Макароны отварные</name>
-            <name>Пирог с повидлом</name>
+            <dish>
+                <name>Салат Изюминка</name>
+            </dish>
+            <dish>
+                <name>Суп куриный с грибами</name>
+            </dish>
+            <dish>
+                <name>Печень по королевски</name>
+            </dish>
+            <dish>
+                <name>Макароны отварные</name>
+            </dish>
+            <dish>
+                <name>Пирог с повидлом</name>
+            </dish>
         </list>
     </order>
 </orders>
