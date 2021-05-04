@@ -4,4 +4,5 @@
 <li><a href="https://github.com/Mirto111/test-tasks-examples/tree/master/travel-bot">Телеграм бот</a></li>
 <li><a href="https://github.com/Mirto111/test-tasks-examples/tree/master/epam-training-center-test-task">Тестовое задание от Epam для поступления в учебный центр</a></li>
 <li><a href="https://github.com/Mirto111/test-tasks-examples/tree/master/xml-sync-db">Задание на синхронизацию БД и xml-файла</a></li>
+<li><a href="https://github.com/Mirto111/alfa-bank-test-task">Сервис, который обращается к сервису курсов валют, и отдает gif в ответ</a></li>
 </ol> 
